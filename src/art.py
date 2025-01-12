@@ -4,7 +4,7 @@ from openai import AsyncOpenAI
 from g4f.client import AsyncClient
 from g4f.Provider import BingCreateImages, Gemini, OpenaiChat
 
-openai_client = AsyncOpenAI(api_key=os.getenv("OPENAI_KEY"))
+openai_client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def get_image_provider(provider_name: str):
     providers = {
